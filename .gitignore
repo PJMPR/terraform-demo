@@ -1,0 +1,32 @@
+﻿# ── Terraform state files ──────────────────────────────────────────────────
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# ── Pliki ze zmiennymi (mogą zawierać tokeny i sekrety) ────────────────────
+# NIGDY nie commituj pliku terraform.tfvars jeśli zawiera tokeny!
+terraform.tfvars
+*.auto.tfvars
+
+# Plik przykładowy jest bezpieczny do commitowania (nie zawiera prawdziwych danych).
+!terraform.tfvars.example
+
+# ── Pliki crash log generowane przez Terraform ─────────────────────────────
+crash.log
+crash.*.log
+
+# ── Pliki override (używane lokalnie do nadpisywania konfiguracji) ──────────
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ── Pliki IDE i systemu operacyjnego ───────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
